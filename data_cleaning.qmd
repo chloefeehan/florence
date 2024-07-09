@@ -1,0 +1,33 @@
+---
+title: "data cleaning"
+author: "Chloe Feehan"
+format: 
+  html: 
+    self-contained: true
+    code-tools: true
+    code-fold: true
+    embed-resources: true
+editor: visual
+execute: 
+  echo: true
+  include: true
+  message: false
+  warning: false
+---
+
+```{r}
+#| label: libraries
+
+library(usethis)
+library(here)
+library(readxl)
+library(tidyverse)
+
+```
+
+```{r}
+#| label: data
+
+florence <- read_excel(here("data", "florence_data.xlsx"))
+
+```
